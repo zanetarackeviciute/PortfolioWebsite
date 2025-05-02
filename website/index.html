@@ -25,7 +25,7 @@
         <div class="container">
             <div>
                 <h1>My portfolio</h1>
-                <a href="#" class="btn btn-black">Watch projects</a>
+                <a href="#" class="btn btn-black">Explore Projects</a>
             </div>
         </div>
     </header>
@@ -46,7 +46,7 @@
                         <span>Express</span>
                         <span>MongoDB</span>
                     </p>
-                    <a href="#" class="btn btn-blue">Watch the project</a>
+                    <a href="#" class="btn btn-blue">View Project</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                         <h3>${project.name}</h3>
                         <p>${project.description}</p>
                         <p>
-                            ${project.technologies.map(x => '<span>' + x + '</span>').join('')}
+                            ${project.technologies.map(x => '<span>' + x + '</span>').join(' ')}
                         </p>
                         <a href="${project.link}" class="btn btn-blue">Watch the project</a>
                     </div>`

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Portfolio website",
+        "description": "Portfolio website for projects",
+        "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
+        "link": "Will be added"
+    },
+    {
+        "id": 2,
+        "name": "Fitness application",
+        "description": "Easiest way to track the results",
+        "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
+        "link": "Will be added"
+    }
+]

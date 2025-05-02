@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Fitness application",
-        "description": "Easiest way to track the results",
+        "description": "A fitness app that calculates burned calories based on selected sport activity and workout duration, tracks daily calorie intake and macronutrients, and provides workout history.",
         "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
         "link": "Will be added"
     },
     {
         "id": 2,
         "name": "Portfolio website",
-        "description": "Portfolio website for projects",
+        "description": "A personal portfolio website showcasing my projects. Built to highlight my work with JavaScript, React, Express, MongoDB, and more.",
         "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
         "link": "Will be added"
     },
     {
         "id": 3,
         "name": "Lifestyle & Health Dashboard",
-        "description": "Analyzing people's lifestyle habits and their relationship to health indicators ",
+        "description": "A data analytics project focused on health indicators, analyzing and visualizing key metrics to provide insights for improving well-being.",
         "technologies": ["MySQL", "Power BI", "Python"],
         "link": "Will be added"
     }

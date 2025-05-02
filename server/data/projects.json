@@ -1,16 +1,23 @@
 [
     {
         "id": 1,
+        "name": "Fitness application",
+        "description": "Easiest way to track the results",
+        "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
+        "link": "Will be added"
+    },
+    {
+        "id": 2,
         "name": "Portfolio website",
         "description": "Portfolio website for projects",
         "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
         "link": "Will be added"
     },
     {
-        "id": 2,
-        "name": "Fitness application",
-        "description": "Easiest way to track the results",
-        "technologies": ["HMTL", "CSS", "React", "JavaScript", "Node.js", "Express", "MongoDB"],
+        "id": 3,
+        "name": "Lifestyle & Health Dashboard",
+        "description": "Analyzing people's lifestyle habits and their relationship to health indicators ",
+        "technologies": ["MySQL", "Power BI", "Python"],
         "link": "Will be added"
     }
 ]

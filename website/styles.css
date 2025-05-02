@@ -1,0 +1,118 @@
+/* ============================== 
+MAIN STYLES
+================================*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+
+.btn-black {
+    background-color: #222;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: #070606;
+    color: white;
+}
+
+.btn-blue {
+    background-color: lightblue;
+    color: #222;
+}
+
+.btn-blue:hover {
+    background-color: rgb(129, 186, 205);
+    color: #070606;
+}
+
+/* ============================== 
+NAVIGATION STYLES
+================================*/
+
+nav {
+    background-color: #222;
+    padding: 30px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: lightblue;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    color: rgb(129, 186, 205);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+
+/* ============================== 
+HEADER STYLES
+================================*/
+
+header {
+    background-color: lightblue;
+    padding: 80px 30px;
+    text-align: left;
+    
+}
+
+
+/* ============================== 
+NEW PROJECTS STYLES
+================================*/
+
+.new-projects {
+    padding: 30px;
+}
+
+.new-projects h2 {
+    text-align: center;
+}
+
+.new-projects .projects {
+    display: flex;
+    gap: 16px;
+}
+
+.new-projects .projects .project {
+    flex: 1;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 20px 30px;
+} 
+
+
+/* ============================== 
+MAIN STYLES
+================================*/

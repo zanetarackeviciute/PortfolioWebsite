@@ -4,6 +4,7 @@ MAIN STYLES
 
 body {
     margin: 0;
+    background: url(images/background.png);
 }
 
 .container {
@@ -23,31 +24,39 @@ body {
 
 
 .btn-black {
-    background-color: #222;
+    /* background-color: #222; */
     color: white;
 }
 
 .btn-black:hover {
-    background-color: #070606;
+    /* background-color: #070606; */
     color: white;
 }
 
 .btn-blue {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     color: #222;
 }
 
 .btn-blue:hover {
-    background-color: rgb(129, 186, 205);
+    /* background-color: rgb(129, 186, 205); */
     color: #070606;
 }
 
+.tag {
+    /* background-color: #222; */
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
 /* ============================== 
 NAVIGATION STYLES
 ================================*/
 
 nav {
-    background-color: #222;
+    background-color: #222222cb;
     padding: 30px;
 }
 
@@ -81,9 +90,21 @@ HEADER STYLES
 ================================*/
 
 header {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 80px 30px;
-    text-align: left;
+    text-align: left;    
+}
+
+header .container .about-me {
+    display: flex;
+    gap: 15px;
+}
+
+header .container .about-me img {
+    border-radius: 10px;
+}
+
+header .container .about-me {
     
 }
 

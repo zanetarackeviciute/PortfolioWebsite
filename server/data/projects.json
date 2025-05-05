@@ -19,5 +19,12 @@
         "description": "A data analytics project focused on health indicators, analyzing and visualizing key metrics to provide insights for improving well-being.",
         "technologies": ["MySQL", "Power BI", "Python"],
         "link": "Will be added"
+    },
+    {
+        "id": 4,
+        "name": "Game-Themed Landing Page",
+        "description": "A game-style landing page recreated from a Figma design. Focused on responsive layout, visual accuracy, and clean front-end implementation",
+        "technologies": ["HTML", "CSS"],
+        "link": "Will be added"
     }
 ]

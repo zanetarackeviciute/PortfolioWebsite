@@ -67,20 +67,22 @@ nav .container {
 }
 
 nav a {
-    color: lightblue;
+    color: rgb(115, 179, 201);
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
     transition: all 0.2s;
 }
 
 nav a:hover {
-    color: rgb(129, 186, 205);
+    color: rgb(54, 127, 151);
 }
 
 nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 16px;
+    gap: 20px;
     list-style-type: none;
 }
 
@@ -97,16 +99,148 @@ header {
 
 header .container .about-me {
     display: flex;
-    gap: 15px;
+    gap: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
-header .container .about-me img {
+
+header .container .about-me .about-me-img {
+    max-width: 450px;
+    width: 100%;
+    max-height: fit-content;
+    transform: rotate(-7deg);
+    background-color: #222222cb;
+    padding: 20px;
     border-radius: 10px;
 }
-
-header .container .about-me {
-    
+header .container .about-me .about-me-img img {
+    border-radius: 10px;
+    width: 100%;
+    transform: rotate(7deg);
 }
+
+header .container .about-me .about-me-second-part {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .about-me .social-media {
+    display: flex;
+    gap: 50px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .container .about-me .social-media .linkedin,
+header .container .about-me .social-media .github {
+    background-color: #222222cb;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(12deg);
+}
+
+header .container .about-me .social-media .github {
+    transform: rotate(-12deg);
+}
+header .container .about-me .social-media .linkedin a img {
+    width: 60px;
+    height: 60px;
+}
+
+header .container .about-me .social-media .github a img {
+    width: 60px;
+    height: 60px;
+}
+
+header .container .about-me .social-media .tape {
+    position: absolute;
+    top: -45px;
+    left: -25px;
+    /* pointer-events helps to react on the elements arround */
+    pointer-events: none; 
+    z-index: 5;
+    transform: rotate(-1deg);
+}
+
+
+header .container .about-me .text-about {
+    padding: 20px 30px;
+    background-color: #222222cb;
+    color: whitesmoke;
+    height: fit-content;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    transform: rotate(2deg);
+}
+
+header .container .about-me .text-about h2 {
+    color: rgb(231, 215, 130);
+}
+
+header .container .about-me .text-about img {
+    position: absolute;
+    top: -28px;
+    left: 45%;
+    transform: rotate(28deg);
+}
+
+
+/* ============================== 
+SKILLS SECTION STYLES
+================================*/
+.skills-section .container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.skills-section .container .skills-section {
+    background-color: #222222cb;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.skills-section .container .skills-section .skills-list h2 {
+    color: rgb(231, 215, 130);
+}
+/* 
+.skills-section .container .skills-section .skills-list ul {
+
+} */
+
+
+.skills-section .container .icons-in-suitcase {
+    width: 550px;
+    transform: rotate(7deg);
+    background: url(images/suitcase.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.skills-section .container .icons-in-suitcase .icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease-out;
+}
+
+
+
+
+
 
 
 /* ============================== 

@@ -221,20 +221,70 @@ SKILLS SECTION STYLES
 
 
 .skills-section .container .icons-in-suitcase {
-    width: 550px;
+    width: 600px;
+    height: 600px;
     transform: rotate(7deg);
     background: url(images/suitcase.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    position: relative;
 }
 
 .skills-section .container .icons-in-suitcase .icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.3s ease-out;
+    position: absolute;
+}
+
+
+.skills-section .container .icons-in-suitcase .js {
+    top: 150px;
+    left: 120px;
+    transform: scale(0.5) rotate(-21deg);
+}
+
+.skills-section .container .icons-in-suitcase .mongodb {
+    width: 60px;
+    height: 120px;
+    top: 90px;
+    left: 250px;
+    transform: scale(0.5) rotate(35deg);
+
+
+}
+.skills-section .container .icons-in-suitcase .python {
+    width: 60px;
+    height: 60px;
+    top: 110px;
+    left: 390px;
+    transform: scale(0.5) rotate(-10deg);
+}
+
+.skills-section .container .icons-in-suitcase .figma {
+
+}
+.skills-section .container .icons-in-suitcase .react {
+
+}
+
+.skills-section .container .icons-in-suitcase .html-icon {
+    
+}
+
+.skills-section .container .icons-in-suitcase .mysql {
+    
+}
+
+.skills-section .container .icons-in-suitcase .css-icon {
+    
+}
+
+.skills-section .container .icons-in-suitcase .powerbi {
+    
 }
 
 

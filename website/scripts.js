@@ -12,7 +12,18 @@ gsap.to(".icon", {
     ease: "back.out(1.7)"   // "pop" effect
 })
 
-
+gsap.to(".skill", {
+    scrollTrigger: {
+        trigger: ".skills-list",
+        start: "top 70%"
+    },
+    opacity: 1,
+    scale: 1,
+    boxShadow: "0 0 20px rgba(255, 255, 255, 0.8)",
+    duration: 1,
+    stagger: 0.5,
+    ease: "back.out(1.7)"
+})
 
 fetch('http://localhost:7788/projects')
 .then(response => response.json())

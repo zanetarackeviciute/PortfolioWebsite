@@ -1,16 +1,17 @@
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.to(".icon", {
-    ScrollTrigger: {
+    scrollTrigger: {  // !!!! ScrollTrigger wouldn't work!
         trigger: ".skills-list", // when this part appearsm on the screen
         start: "top 70%" // when it reaches 70% of the screen
     },
     opacity: 1,    // becomes visible
     scale: 1,   // becomes normal size
-    duration: 0.5,    // duration for one icon 
-    stagger: 0.2,   //    time between each icon
+    duration: 1,    // duration for one icon 
+    stagger: 0.5,   //    time between each icon
     ease: "back.out(1.7)"   // "pop" effect
 })
+
 
 
 fetch('http://localhost:7788/projects')

@@ -204,25 +204,42 @@ SKILLS SECTION STYLES
     justify-content: space-between;
 }
 
-.skills-section .container .skills-section {
+.skills-section .container .skills-list {
+    margin-top: 40px;
     background-color: #222222cb;
     color: whitesmoke;
     border-radius: 20px;
     padding: 20px 30px;
 }
 
-.skills-section .container .skills-section .skills-list h2 {
+.skills-section .container .skills-list h2 {
     color: rgb(231, 215, 130);
+    font-weight: bold;
 }
-/* 
-.skills-section .container .skills-section .skills-list ul {
 
-} */
+.skills-section .container .skills-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills-section .container .skills-list ul li {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease-out;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
 
 
 .skills-section .container .icons-in-suitcase {
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     transform: rotate(7deg);
     background: url(images/suitcase.png);
     background-repeat: no-repeat;
@@ -242,73 +259,99 @@ SKILLS SECTION STYLES
 
 
 .skills-section .container .icons-in-suitcase .js {
-    top: 100px;
-    left: 120px;
-    transform: scale(1.5) rotate(-21deg);
+    width: 75px;
+    height: 75px;
+    top: 246px;
+    left: 117px;
+    transform: scale(1.5) rotate(-11deg);
 }
 
-.skills-section .container .icons-in-suitcase .mongodb {
-    width: 60px;
-    height: 120px;
-    top: 97px;
-    left: 250px;
-    transform: scale(1.5) rotate(35deg);
-
-
-}
-.skills-section .container .icons-in-suitcase .python {
-    top: 110px;
-    left: 390px;
-    transform: scale(1.5) rotate(-10deg);
-}
-
-.skills-section .container .icons-in-suitcase .figma {
-    width: 65px;
-    height: 100px;
-    top: 205px;
-    left: 130px;
-    transform: scale(1.5) rotate(6deg);
-}
 .skills-section .container .icons-in-suitcase .react {
     top: 240px;
-    left: 273px;
+    left: 437px;
     width: 90px;
     height: 90px;
 }
 
-.skills-section .container .icons-in-suitcase .html-icon {
-    top: 220px;
-    left: 409px;
-    width: 60px;
-    height: 100px;
-    transform: scale(1.5) rotate(16deg);
+.skills-section .container .icons-in-suitcase .restAPI {
+    width: 90px;
+    height: 90px;
+    top: 215px;
+    left: 236px;
+    transform: scale(1.5) rotate(-3deg);
 }
 
-.skills-section .container .icons-in-suitcase .mysql {
-    top: 345px;
-    left: 44px;
-    width: 172px;
-    height: 90px;
-    transform: scale(1.5) rotate(-15deg);
+.skills-section .container .icons-in-suitcase .html-icon {
+    top: 90px;
+    left: 464px;
+    width: 67px;
+    height: 117px;
+    transform: scale(1.5) rotate(16deg);
 }
 
 .skills-section .container .icons-in-suitcase .css-icon {
     width: 80px;
     height: 80px;
-    top: 365px;
-    left: 269px;
-    transform: scale(1.5) rotate(10deg);
+    top: 406px;
+    left: 247px;
+    transform: scale(1.5) rotate(7deg);
+}
+
+.skills-section .container .icons-in-suitcase .python {
+    width: 80px;
+    height: 80px;
+    top: 94px;
+    left: 234px;
+    transform: scale(1.5) rotate(-10deg);
+}
+
+.skills-section .container .icons-in-suitcase .mysql {
+    top: 389px;
+    left: 34px;
+    width: 172px;
+    height: 90px;
+    transform: scale(1.5) rotate(-15deg);
+}
+
+
+.skills-section .container .icons-in-suitcase .figma {
+    width: 65px;
+    height: 100px;
+    top: 114px;
+    left: 118px;
+    transform: scale(1.5) rotate(6deg);
+}
+
+.skills-section .container .icons-in-suitcase .mongodb {
+    width: 63px;
+    height: 145px;
+    top: 132px;
+    left: 348px;
+    transform: scale(1.5) rotate(-10deg);
 }
 
 .skills-section .container .icons-in-suitcase .powerbi {
     width: 90px;
     height: 105px;
-    top: 350px;
-    left: 419px;
-    transform: scale(1.5) rotate(-9deg);
+    top: 388px;
+    left: 482px;
+    transform: scale(1.5) rotate(-7deg);
 }
 
+.skills-section .container .icons-in-suitcase .node {
+    width: 256px;
+    height: 71px;
+    top: 316px;
+    left: 185px;
+}
 
+.skills-section .container .icons-in-suitcase .sass {
+    width: 95px;
+    height: 90px;
+    top: 392px;
+    left: 362px;
+    transform: scale(1.5) rotate(-11deg);
+} */
 
 
 

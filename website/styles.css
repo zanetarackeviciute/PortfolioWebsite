@@ -104,7 +104,6 @@ header .container .about-me {
     justify-content: space-between;
 }
 
-
 header .container .about-me .about-me-img {
     max-width: 450px;
     width: 100%;
@@ -114,6 +113,7 @@ header .container .about-me .about-me-img {
     padding: 20px;
     border-radius: 10px;
 }
+
 header .container .about-me .about-me-img img {
     border-radius: 10px;
     width: 100%;
@@ -235,7 +235,7 @@ SKILLS SECTION STYLES
     width: 70px;
     height: 70px;
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(1.5);
     transition: all 0.3s ease-out;
     position: absolute;
 }
@@ -244,7 +244,7 @@ SKILLS SECTION STYLES
 .skills-section .container .icons-in-suitcase .js {
     top: 100px;
     left: 120px;
-    transform: scale(0.5) rotate(-21deg);
+    transform: scale(1.5) rotate(-21deg);
 }
 
 .skills-section .container .icons-in-suitcase .mongodb {
@@ -252,14 +252,14 @@ SKILLS SECTION STYLES
     height: 120px;
     top: 97px;
     left: 250px;
-    transform: scale(0.5) rotate(35deg);
+    transform: scale(1.5) rotate(35deg);
 
 
 }
 .skills-section .container .icons-in-suitcase .python {
     top: 110px;
     left: 390px;
-    transform: scale(0.5) rotate(-10deg);
+    transform: scale(1.5) rotate(-10deg);
 }
 
 .skills-section .container .icons-in-suitcase .figma {
@@ -267,7 +267,7 @@ SKILLS SECTION STYLES
     height: 100px;
     top: 205px;
     left: 130px;
-    transform: scale(0.5) rotate(6deg);
+    transform: scale(1.5) rotate(6deg);
 }
 .skills-section .container .icons-in-suitcase .react {
     top: 240px;
@@ -281,7 +281,7 @@ SKILLS SECTION STYLES
     left: 409px;
     width: 60px;
     height: 100px;
-    transform: scale(0.5) rotate(16deg);
+    transform: scale(1.5) rotate(16deg);
 }
 
 .skills-section .container .icons-in-suitcase .mysql {
@@ -289,7 +289,7 @@ SKILLS SECTION STYLES
     left: 44px;
     width: 172px;
     height: 90px;
-    transform: scale(0.5) rotate(-15deg);
+    transform: scale(1.5) rotate(-15deg);
 }
 
 .skills-section .container .icons-in-suitcase .css-icon {
@@ -297,7 +297,7 @@ SKILLS SECTION STYLES
     height: 80px;
     top: 365px;
     left: 269px;
-    transform: scale(0.5) rotate(10deg);
+    transform: scale(1.5) rotate(10deg);
 }
 
 .skills-section .container .icons-in-suitcase .powerbi {
@@ -305,7 +305,7 @@ SKILLS SECTION STYLES
     height: 105px;
     top: 350px;
     left: 419px;
-    transform: scale(0.5) rotate(-9deg);
+    transform: scale(1.5) rotate(-9deg);
 }
 
 

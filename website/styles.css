@@ -232,8 +232,8 @@ SKILLS SECTION STYLES
 }
 
 .skills-section .container .icons-in-suitcase .icon {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.3s ease-out;
@@ -242,7 +242,7 @@ SKILLS SECTION STYLES
 
 
 .skills-section .container .icons-in-suitcase .js {
-    top: 150px;
+    top: 100px;
     left: 120px;
     transform: scale(0.5) rotate(-21deg);
 }
@@ -250,41 +250,62 @@ SKILLS SECTION STYLES
 .skills-section .container .icons-in-suitcase .mongodb {
     width: 60px;
     height: 120px;
-    top: 90px;
+    top: 97px;
     left: 250px;
     transform: scale(0.5) rotate(35deg);
 
 
 }
 .skills-section .container .icons-in-suitcase .python {
-    width: 60px;
-    height: 60px;
     top: 110px;
     left: 390px;
     transform: scale(0.5) rotate(-10deg);
 }
 
 .skills-section .container .icons-in-suitcase .figma {
-
+    width: 65px;
+    height: 100px;
+    top: 205px;
+    left: 130px;
+    transform: scale(0.5) rotate(6deg);
 }
 .skills-section .container .icons-in-suitcase .react {
-
+    top: 240px;
+    left: 273px;
+    width: 90px;
+    height: 90px;
 }
 
 .skills-section .container .icons-in-suitcase .html-icon {
-    
+    top: 220px;
+    left: 409px;
+    width: 60px;
+    height: 100px;
+    transform: scale(0.5) rotate(16deg);
 }
 
 .skills-section .container .icons-in-suitcase .mysql {
-    
+    top: 345px;
+    left: 44px;
+    width: 172px;
+    height: 90px;
+    transform: scale(0.5) rotate(-15deg);
 }
 
 .skills-section .container .icons-in-suitcase .css-icon {
-    
+    width: 80px;
+    height: 80px;
+    top: 365px;
+    left: 269px;
+    transform: scale(0.5) rotate(10deg);
 }
 
 .skills-section .container .icons-in-suitcase .powerbi {
-    
+    width: 90px;
+    height: 105px;
+    top: 350px;
+    left: 419px;
+    transform: scale(0.5) rotate(-9deg);
 }
 
 

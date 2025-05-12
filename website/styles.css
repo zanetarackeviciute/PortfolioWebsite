@@ -403,7 +403,7 @@ NEW PROJECTS STYLES
 }
 
 .new-projects .container img {
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
     /* for images(default - inline) display:block - so margin: 0 auto is working */
     display: block; 
@@ -414,6 +414,8 @@ NEW PROJECTS STYLES
 .new-projects .projects {
     display: flex;
     gap: 50px;
+    margin: 150px auto;
+    position: relative;
 }
 
 .new-projects .projects .project {
@@ -422,10 +424,19 @@ NEW PROJECTS STYLES
     flex: 1;
     /* border: 1px solid #222; */
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 25px 35px;
     transition: transform 0.3s ease;
     background-color: #3c381e57;
 } 
+
+.new-projects .projects .project:nth-child(even) {
+    transform: rotate(5deg);
+}
+
+.new-projects .projects .project:nth-child(odd) {
+    transform: rotate(-5deg);
+}
+
 
 .new-projects .projects .project:hover {
     transform: translateY(-20px);
@@ -435,6 +446,22 @@ NEW PROJECTS STYLES
 .new-projects .projects .project span,
 .new-projects .projects .project .btn {
     opacity: 0;
+}
+
+.new-projects .projects #two-projects {
+    position: absolute;
+    max-width: 378px;
+    top: -120px;
+    left: 238px;
+    transform: rotate(-6deg);
+}
+
+.new-projects .projects #one-project {
+    position: absolute;
+    max-width: 274px;
+    top: -47px;
+    right: -92px;
+    transform: rotate(22deg);
 }
 
 /* ============================== 

@@ -40,23 +40,15 @@ h2 {
 }
 
 .btn-blue {
-    /* background-color: lightblue; */
+    background-color: rgb(124, 210, 239);
     color: #222;
 }
 
 .btn-blue:hover {
-    /* background-color: rgb(129, 186, 205); */
+    background-color: rgb(64, 144, 170);
     color: #070606;
 }
 
-.tag {
-    /* background-color: #222; */
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
 /* ============================== 
 NAVIGATION STYLES
 ================================*/
@@ -388,7 +380,7 @@ SKILLS SECTION STYLES
     top: 392px;
     left: 362px;
     transform: scale(1.5) rotate(-11deg);
-} */
+} 
 
 
 
@@ -401,27 +393,49 @@ NEW PROJECTS STYLES
 .new-projects {
     padding: 30px;
     min-height: 100vh;
+    display: flex;
 }
 
+.new-projects .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .new-projects .container img {
     max-width: 500px;
     width: 100%;
+    /* for images(default - inline) display:block - so margin: 0 auto is working */
+    display: block; 
     margin: 0 auto;
+    transform: rotate(5deg);
 }
 
 .new-projects .projects {
     display: flex;
-    gap: 16px;
+    gap: 50px;
 }
 
 .new-projects .projects .project {
+    opacity: 0;
+    transform: translateY(20px);
     flex: 1;
-    border: 1px solid #222;
+    /* border: 1px solid #222; */
     border-radius: 5px;
     padding: 20px 30px;
+    transition: transform 0.3s ease;
+    background-color: #3c381e57;
 } 
 
+.new-projects .projects .project:hover {
+    transform: translateY(-20px);
+    background-color: #3c381e78;
+}
+
+.new-projects .projects .project span,
+.new-projects .projects .project .btn {
+    opacity: 0;
+}
 
 /* ============================== 
 EDUCATION STYLES

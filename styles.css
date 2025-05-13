@@ -52,6 +52,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 nav .container {
@@ -93,9 +94,6 @@ header .container .about-me {
 }
 
 header .container .about-me .about-me-img {
-    max-width: 450px;
-    width: 100%;
-    max-height: fit-content;
     transform: rotate(-7deg);
     background-color: rgba(34, 34, 34);
     padding: 20px;
@@ -104,8 +102,10 @@ header .container .about-me .about-me-img {
 }
 
 header .container .about-me .about-me-img img {
-    border-radius: 10px;
+    max-width: 800px;
     width: 100%;
+    margin-bottom: 44px;
+    border-radius: 10px;
     transform: rotate(7deg);
 }
 
@@ -154,7 +154,7 @@ header .container .about-me .social-media .github a img {
 header .container .about-me .social-media .tape {
     position: absolute;
     top: -45px;
-    left: -25px;
+    left: -26px;
     /* pointer-events helps to react on the elements arround */
     pointer-events: none; 
     z-index: 5;
@@ -193,6 +193,7 @@ SKILLS SECTION STYLES
     gap: 30px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -203,12 +204,13 @@ SKILLS SECTION STYLES
     border-radius: 20px;
     padding: 30px;
     height: fit-content;
-    transform: rotate(-5deg)
+    transform: rotate(-5deg);
+    position: relative;
 }
 
 .skills-section .container .skills-list h2 { 
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 .skills-section .container .skills-list ul {
@@ -229,33 +231,32 @@ SKILLS SECTION STYLES
     padding: 10px;
 }
 
-.skills-section .container #skills-pin {
+.skills-section .container .skills-list #skills-pin {
     position: absolute;
-    top: 12px;
-    left: 32%;
+    top: -1%;
+    right: 1%;
 }
 
-.skills-section .container #red-arrow {
+.skills-section .container .skills-list #red-arrow {
     position: absolute;
-    width: 498px;
-    height: 177px;
-    top: -118px;
-    left: 32%;
-    transform: rotate(-9deg);
+    width: clamp(450px, 10vw, 504px);
+    top: -17%;
+    left: 46%;
+    transform: translate(50%, -50%) rotate(-13deg);
 }
 
-.skills-section .container .icons-in-suitcase {
-    width: 650px;
-    height: 650px;
-    transform: rotate(7deg);
-    background: url(images/suitcase.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.skills-section .container .suitcase-wrapper {
+    max-width: 650px;
+    width: 100%;
     position: relative;
 }
 
-.skills-section .container .icons-in-suitcase .icon {
+.skills-section .container .suitcase-wrapper img {
+    width: 100%;
+    transform: rotate(7deg);
+}
+
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .icon {
     width: 70px;
     height: 70px;
     opacity: 0;
@@ -263,98 +264,98 @@ SKILLS SECTION STYLES
     position: absolute;
 }
 
-.skills-section .container .icons-in-suitcase .js {
-    width: 75px;
-    height: 75px;
-    top: 246px;
-    left: 117px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .js {
+    width: clamp(50px, 10vw, 75px);
+    height: clamp(50px, 10vw, 75px);
+    top: 35%;
+    left: 20%;
     transform: scale(1.5) rotate(-11deg);
 }
 
-.skills-section .container .icons-in-suitcase .react {
-    top: 240px;
-    left: 437px;
-    width: 90px;
-    height: 90px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .react {
+    width: clamp(70px, 10vw, 90px);
+    height: clamp(70px, 10vw, 90px);
+    top: 39%;
+    right: 18%;
 }
 
-.skills-section .container .icons-in-suitcase .restAPI {
-    width: 90px;
-    height: 90px;
-    top: 215px;
-    left: 236px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .restAPI {
+    width: clamp(70px, 10vw, 90px);
+    height: clamp(70px, 10vw, 90px);
+    top: 35%;
+    left: 41%;
     transform: scale(1.5) rotate(-3deg);
 }
 
-.skills-section .container .icons-in-suitcase .html-icon {
-    top: 90px;
-    left: 464px;
-    width: 67px;
-    height: 117px;
-    transform: scale(1.5) rotate(16deg);
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .html-icon {
+    width: clamp(55px, 10vw, 75px);
+    height: clamp(105px, 10vw, 125px);
+    top: 15%;
+    right: 17%;
+    transform: scale(1.5) rotate(17deg);
 }
 
-.skills-section .container .icons-in-suitcase .css-icon {
-    width: 80px;
-    height: 80px;
-    top: 406px;
-    left: 247px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .css-icon {
+    width: clamp(65px, 10vw, 80px);
+    height: clamp(65px, 10vw, 80px);
+    bottom: 24%;
+    left: 36%;
     transform: scale(1.5) rotate(7deg);
 }
 
-.skills-section .container .icons-in-suitcase .python {
-    width: 80px;
-    height: 80px;
-    top: 94px;
-    left: 234px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .python {
+    width: clamp(70px, 10vw, 90px);
+    height: clamp(70px, 10vw, 90px);
+    top: 17%;
+    left: 38%;
     transform: scale(1.5) rotate(-10deg);
 }
 
-.skills-section .container .icons-in-suitcase .mysql {
-    top: 389px;
-    left: 34px;
-    width: 172px;
-    height: 90px;
-    transform: scale(1.5) rotate(-15deg);
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .mysql {
+    width: clamp(150px, 10vw, 180px);
+    height: clamp(80px, 10vw, 100px);
+    bottom: 29%;
+    left: 5%;
+    transform: scale(1.5) rotate(-13deg);
 }
 
 
-.skills-section .container .icons-in-suitcase .figma {
-    width: 65px;
-    height: 100px;
-    top: 114px;
-    left: 118px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .figma {
+    width: clamp(50px, 10vw, 70px);
+    height: clamp(100px, 10vw, 120px);
+    top: 13%;
+    left: 23%;
     transform: scale(1.5) rotate(6deg);
 }
 
-.skills-section .container .icons-in-suitcase .mongodb {
-    width: 63px;
-    height: 145px;
-    top: 132px;
-    left: 348px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .mongodb {
+    width: clamp(55px, 10vw, 75px);
+    height: clamp(120px, 10vw, 150px);
+    top: 19%;
+    right: 34%;
     transform: scale(1.5) rotate(-10deg);
 }
 
-.skills-section .container .icons-in-suitcase .powerbi {
-    width: 90px;
-    height: 105px;
-    top: 388px;
-    left: 482px;
-    transform: scale(1.5) rotate(-7deg);
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .powerbi {
+    width: clamp(70px, 10vw, 90px);
+    height: clamp(90px, 10vw, 110px);
+    bottom: 19%;
+    right: 14%;
+    transform: scale(1.5) rotate(-3deg);
 }
 
-.skills-section .container .icons-in-suitcase .node {
-    width: 256px;
-    height: 71px;
-    top: 316px;
-    left: 185px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .node {
+    width: clamp(230px, 10vw, 260px);
+    height: clamp(60px, 10vw, 80px);
+    top: 50%;
+    left: 30%;
 }
 
-.skills-section .container .icons-in-suitcase .sass {
-    width: 95px;
-    height: 90px;
-    top: 392px;
-    left: 362px;
+.skills-section .container .suitcase-wrapper .icons-in-suitcase .sass {
+    width: clamp(75px, 10vw, 95px);
+    height: clamp(65px, 10vw, 85px);
+    bottom: 22%;
+    right: 29%;
     transform: scale(1.5) rotate(-11deg);
 } 
 
@@ -389,6 +390,10 @@ NEW PROJECTS STYLES
     position: relative;
 }
 
+.new-projects .project .fitness-application {
+    position: relative;
+}
+
 .new-projects .projects .project {
     opacity: 0;
     transform: translateY(20px);
@@ -418,6 +423,7 @@ NEW PROJECTS STYLES
 }
 
 .new-projects .projects #two-projects {
+    margin: 0;
     position: absolute;
     max-width: 378px;
     top: -157px;
@@ -431,4 +437,45 @@ NEW PROJECTS STYLES
     top: -90px;
     right: -92px;
     transform: rotate(22deg);
+}
+
+
+/* ============================== 
+RESPONSIVE DESIGN
+================================*/
+@media only screen and (max-width: 1560px) {
+    header .container .about-me {
+        display: block;
+        text-align: center;
+        gap: 20px;
+    }
+
+    header .container .about-me-img {
+        margin-bottom: 120px;
+    }
+
+    header .container .about-me .social-media .tape {
+        left: -11px;
+    }
+    header .container .about-me .social-media .linkedin a img {
+        width: 90px;
+        height: 90px;
+    }
+
+    header .container .about-me .social-media .github a img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .skills-section .container .skills-list #red-arrow {
+        display: none;
+    }
+
+    .skills-section .container .skills-list {
+        margin: 0 auto 40px;
+    }
+
+    .skills-section .container .suitcase-wrapper {
+        margin: 0 auto;
+    }
 }

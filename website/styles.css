@@ -1,7 +1,6 @@
 /* ============================== 
 MAIN STYLES
 ================================*/
-
 body {
     margin: 0;
     background: url(images/background.png);
@@ -11,6 +10,15 @@ body {
     max-width: 80%;
     width: 100%;
     margin: 0 auto;
+}
+
+h1, h2, h3, a, li {
+    font-family: "Poetsen One", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 }
 
 h2 {
@@ -25,26 +33,12 @@ h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-}
-
-
-
-.btn-black {
-    /* background-color: #222; */
-    color: white;
-}
-
-.btn-black:hover {
-    /* background-color: #070606; */
-    color: white;
-}
-
-.btn-blue {
     background-color: rgb(124, 210, 239);
     color: #222;
+    font-family: "Poetsen One", sans-serif;
 }
 
-.btn-blue:hover {
+.btn:hover {
     background-color: rgb(64, 144, 170);
     color: #070606;
 }
@@ -52,24 +46,23 @@ h2 {
 /* ============================== 
 NAVIGATION STYLES
 ================================*/
-
 nav {
     background-color: rgba(34, 34, 34);
-    padding: 30px;
-    /* position: sticky; */
+    padding: 20px;
+    position: sticky;
     top: 0;
-    /* z-index: 1000; */
+    z-index: 1000;
 }
 
 nav .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav a {
     color: rgb(124, 210, 239);
-    font-size: 24px;
+    font-size: 38px;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.2s;
@@ -80,21 +73,10 @@ nav a:hover {
     color: rgb(64, 144, 170)
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
-
-
 /* ============================== 
 HEADER STYLES
 ================================*/
-
 header {
-    /* background-color: lightblue; */
     padding: 80px 30px;
     text-align: left;    
     min-height: 100vh;
@@ -119,7 +101,6 @@ header .container .about-me .about-me-img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 28px 82px rgba(0, 0, 0, 1);
-
 }
 
 header .container .about-me .about-me-img img {
@@ -159,6 +140,7 @@ header .container .about-me .social-media .github {
 header .container .about-me .social-media .github {
     transform: rotate(-12deg);
 }
+
 header .container .about-me .social-media .linkedin a img {
     width: 60px;
     height: 60px;
@@ -178,7 +160,6 @@ header .container .about-me .social-media .tape {
     z-index: 5;
     transform: rotate(-1deg);
 }
-
 
 header .container .about-me .text-about {
     padding: 20px 30px;
@@ -200,13 +181,11 @@ header .container .about-me .text-about img {
     transform: rotate(28deg);
 }
 
-
 /* ============================== 
 SKILLS SECTION STYLES
 ================================*/
 .skills-section {
-    margin-top: 100px;
-    min-height: 100vh;
+    margin: 100px auto;
 }
 
 .skills-section .container {
@@ -265,7 +244,6 @@ SKILLS SECTION STYLES
     transform: rotate(-9deg);
 }
 
-
 .skills-section .container .icons-in-suitcase {
     width: 650px;
     height: 650px;
@@ -275,7 +253,6 @@ SKILLS SECTION STYLES
     background-size: contain;
     background-position: center;
     position: relative;
-    
 }
 
 .skills-section .container .icons-in-suitcase .icon {
@@ -285,7 +262,6 @@ SKILLS SECTION STYLES
     transition: all 0.3s ease-out;
     position: absolute;
 }
-
 
 .skills-section .container .icons-in-suitcase .js {
     width: 75px;
@@ -382,17 +358,12 @@ SKILLS SECTION STYLES
     transform: scale(1.5) rotate(-11deg);
 } 
 
-
-
-
-
 /* ============================== 
 NEW PROJECTS STYLES
 ================================*/
 
 .new-projects {
     padding: 30px;
-    min-height: 100vh;
     display: flex;
 }
 
@@ -407,14 +378,14 @@ NEW PROJECTS STYLES
     width: 100%;
     /* for images(default - inline) display:block - so margin: 0 auto is working */
     display: block; 
-    margin: 0 auto;
+    margin: 40px auto;
     transform: rotate(5deg);
 }
 
 .new-projects .projects {
     display: flex;
     gap: 50px;
-    margin: 150px auto;
+    margin: 170px auto;
     position: relative;
 }
 
@@ -422,7 +393,6 @@ NEW PROJECTS STYLES
     opacity: 0;
     transform: translateY(20px);
     flex: 1;
-    /* border: 1px solid #222; */
     border-radius: 5px;
     padding: 25px 35px;
     transition: transform 0.3s ease;
@@ -437,7 +407,6 @@ NEW PROJECTS STYLES
     transform: rotate(-5deg);
 }
 
-
 .new-projects .projects .project:hover {
     transform: translateY(-20px);
     background-color: #3c381e78;
@@ -451,7 +420,7 @@ NEW PROJECTS STYLES
 .new-projects .projects #two-projects {
     position: absolute;
     max-width: 378px;
-    top: -120px;
+    top: -157px;
     left: 238px;
     transform: rotate(-6deg);
 }
@@ -459,14 +428,7 @@ NEW PROJECTS STYLES
 .new-projects .projects #one-project {
     position: absolute;
     max-width: 274px;
-    top: -47px;
+    top: -90px;
     right: -92px;
     transform: rotate(22deg);
-}
-
-/* ============================== 
-EDUCATION STYLES
-================================*/
-.education {
-    min-height: 100vh;
 }

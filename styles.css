@@ -85,7 +85,7 @@ header {
 
 header .container .about-me {
     display: flex;
-    gap: 40px;
+    gap: 80px;
     margin: 0 auto;
     justify-content: space-between;
     opacity: 0;
@@ -99,10 +99,12 @@ header .container .about-me .about-me-img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 28px 82px rgba(0, 0, 0, 1);
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 header .container .about-me .about-me-img img {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     margin-bottom: 44px;
     border-radius: 10px;
@@ -388,10 +390,39 @@ NEW PROJECTS STYLES
     gap: 50px;
     margin: 170px auto;
     position: relative;
+    flex-wrap: wrap;
 }
 
-.new-projects .project .fitness-application {
+.new-projects .projects .fitness-application,
+.new-projects .projects .portfolio-website,
+.new-projects .projects .game-page {
     position: relative;
+}
+
+.new-projects .projects .project-pin {
+    position: absolute;
+    margin: 0;
+    max-width: 55px;
+    top: -10%;
+    right: 0;
+}
+
+.new-projects .projects .fitness-application .project-pin {
+    top: -12%;
+    right: -3%;
+    transform: rotate(-5deg);
+}
+
+.new-projects .projects .portfolio-website .project-pin {
+    max-width: 90px;
+    top: -10%;
+    left: 0%;
+}
+
+.new-projects .projects .game-page .project-pin {
+    top: -11%;
+    right: 0%;
+    transform: rotate(-5deg);
 }
 
 .new-projects .projects .project {
@@ -444,6 +475,9 @@ NEW PROJECTS STYLES
 RESPONSIVE DESIGN
 ================================*/
 @media only screen and (max-width: 1560px) {
+    .container {
+        margin: 0 auto;
+    }
     header .container .about-me {
         display: block;
         text-align: center;
@@ -454,15 +488,19 @@ RESPONSIVE DESIGN
         margin-bottom: 120px;
     }
 
-    header .container .about-me .social-media .tape {
+    header .container .about-me .about-me-second-part {
+        margin-top: 140px;
+    }
+
+    header .container .about-me .about-me-second-part .social-media .tape {
         left: -11px;
     }
-    header .container .about-me .social-media .linkedin a img {
+    header .container .about-me .about-me-second-part .social-media .linkedin a img {
         width: 90px;
         height: 90px;
     }
 
-    header .container .about-me .social-media .github a img {
+    header .container .about-me .about-me-second-part .social-media .github a img {
         width: 90px;
         height: 90px;
     }
@@ -477,5 +515,75 @@ RESPONSIVE DESIGN
 
     .skills-section .container .suitcase-wrapper {
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .new-projects .projects .fitness-application .project-pin {
+        top: -7%;
+        right: -7%;
+    }
+
+    .new-projects .projects .portfolio-website .project-pin {
+        top: -6%;
+        left: -10%;
+    }
+
+    .new-projects .projects .game-page .project-pin {
+        top: -7%;
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .skills-section {
+        margin-bottom: 0;
+    }
+    .skills-section .container .skills-list ul li {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .skills-section .container .suitcase-wrapper {
+        display: none;
+    }
+
+    .new-projects .projects {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 531px) {
+    .new-projects .projects .fitness-application .project-pin {
+        top: -15%;
+        right: -2%;
+    }
+
+    .new-projects .projects .portfolio-website .project-pin {
+        top: -15%;
+        left: -8%;
+    }
+
+    .new-projects .projects .game-page .project-pin {
+        top: -14%;
+        right: -2%;
+    }
+}
+@media only screen and (max-width: 390px) {
+    header .container .about-me .social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .container .about-me .social-media .tape {
+        display: none;
     }
 }

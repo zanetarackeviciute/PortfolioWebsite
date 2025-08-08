@@ -393,9 +393,10 @@ NEW PROJECTS STYLES
     flex-wrap: wrap;
 }
 
-.new-projects .projects .fitness-application,
-.new-projects .projects .portfolio-website,
-.new-projects .projects .game-page {
+.new-projects .projects .fitbit-dashboard,
+.new-projects .projects .guess-the-number,
+.new-projects .projects .game-page,
+.new-projects .projects .fitness-application {
     position: relative;
 }
 
@@ -407,16 +408,16 @@ NEW PROJECTS STYLES
     right: 0;
 }
 
-.new-projects .projects .fitness-application .project-pin {
-    top: -12%;
-    right: -3%;
-    transform: rotate(-5deg);
+.new-projects .projects .fitbit-dashboard .project-pin {
+    top: -10%;
+    right: 0%;
+    transform: rotate(-2deg);
 }
 
-.new-projects .projects .portfolio-website .project-pin {
-    max-width: 90px;
-    top: -10%;
+.new-projects .projects .guess-the-number .project-pin {
+    top: -11%;
     left: 0%;
+    transform: rotate(-5deg);
 }
 
 .new-projects .projects .game-page .project-pin {
@@ -424,6 +425,14 @@ NEW PROJECTS STYLES
     right: 0%;
     transform: rotate(-5deg);
 }
+
+.new-projects .projects .fitness-application .project-pin {
+    top: -12%;
+    left: 0%;
+    transform: rotate(-5deg);
+}
+
+
 
 .new-projects .projects .project {
     opacity: 0;
@@ -518,20 +527,24 @@ RESPONSIVE DESIGN
     }
 }
 
-@media only screen and (max-width: 1040px) {
-    .new-projects .projects .fitness-application .project-pin {
-        top: -7%;
-        right: -7%;
+@media only screen and (max-width: 1412px) {
+    .new-projects .projects .fitbit-dashboard .project-pin {
+        top: -8%;
+
     }
 
     .new-projects .projects .guess-the-number .project-pin {
-        top: -6%;
-        left: -10%;
+        top: -8%;
+
     }
 
     .new-projects .projects .game-page .project-pin {
-        top: -7%;
-        right: 0%;
+        top: -8%;
+
+    }
+    .new-projects .projects .fitness-application .project-pin {
+        top: -8%;
+
     }
 }
 
@@ -562,21 +575,26 @@ RESPONSIVE DESIGN
 }
 
 @media only screen and (max-width: 531px) {
-    .new-projects .projects .fitness-application .project-pin {
+    .new-projects .projects .fitbit-dashboard .project-pin {
         top: -15%;
         right: -2%;
     }
 
     .new-projects .projects .guess-the-number .project-pin {
         top: -15%;
-        left: -8%;
+        left: -2%;
     }
 
     .new-projects .projects .game-page .project-pin {
         top: -14%;
         right: -2%;
     }
+    .new-projects .projects .fitness-application .project-pin {
+        top: -15%;
+        right: -2%;
+    }
 }
+
 @media only screen and (max-width: 390px) {
     header .container .about-me .social-media {
         flex-wrap: wrap;

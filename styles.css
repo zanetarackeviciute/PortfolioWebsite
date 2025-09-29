@@ -396,8 +396,11 @@ NEW PROJECTS STYLES
 .new-projects .projects .fitbit-dashboard,
 .new-projects .projects .guess-the-number,
 .new-projects .projects .game-page,
-.new-projects .projects .fitness-application {
+.new-projects .projects .fitness-application,
+.new-projects .projects .worldometers-scrape {
+    min-width: 300px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .new-projects .projects .project-pin {
